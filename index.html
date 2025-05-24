@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillShareHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">SkillShareHub</div>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#signup-section">Get Started</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <button onclick="openModal('login')">Login</button>
+      <button onclick="openModal('signup')">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Learn & Teach Skills Online</h1>
+    <p>Connect globally and share knowledge through live, one-on-one sessions.</p>
+    <button onclick="openModal('signup')">Start Sharing</button>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features">
+    <h2>Platform Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>User System</h3>
+        <p>Sign up, manage your profile, and list your skills.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Skill Matching</h3>
+        <p>Search for mentors and learners by skill or availability.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Online Sessions</h3>
+        <p>Live video sessions via Zoom or WebRTC.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Chat & Messaging</h3>
+        <p>Real-time messaging before and during sessions.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Ratings & Reviews</h3>
+        <p>Help the community by leaving feedback after sessions.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Notifications</h3>
+        <p>Stay updated with session requests and reminders.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Create a profile and list your skills.</li>
+      <li>Search for skills you want to learn.</li>
+      <li>Request and schedule a session with a mentor.</li>
+      <li>Join a video call and start learning!</li>
+    </ol>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section id="signup-section" class="signup-cta">
+    <h2>Ready to Learn or Teach?</h2>
+    <p>Join our growing community of skill sharers.</p>
+    <button onclick="openModal('signup')">Sign Up Free</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 SkillShareHub. All rights reserved.</p>
+  </footer>
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('login')">&times;</span>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p class="auth-switch">Don't have an account? <a onclick="switchAuth('signup')">Sign up here</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- SIGNUP MODAL -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('signup')">&times;</span>
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+        <p class="auth-switch">Already have an account? <a onclick="switchAuth('login')">Login here</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
