@@ -1,4 +1,4 @@
-/* General Layout */
+/*
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
     color: #333;
   }
   
-  /* Header */
+  
   header {
     display: flex;
     justify-content: space-between;
@@ -48,7 +48,7 @@
     cursor: pointer;
   }
   
-  /* Hero Section */
+  
   .hero {
     text-align: center;
     padding: 4rem 2rem;
@@ -72,7 +72,6 @@
     margin-top: 1rem;
   }
   
-  /* Features */
   .features {
     padding: 3rem 2rem;
     background: #fff;
@@ -93,7 +92,7 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
   
-  /* How it Works */
+ 
   .how-it-works {
     background: #f0f8ff;
     padding: 3rem 2rem;
@@ -107,7 +106,7 @@
     margin-inline: auto;
   }
   
-  /* CTA */
+
   .signup-cta {
     background: #0d6efd;
     color: white;
@@ -125,7 +124,7 @@
     font-weight: bold;
   }
   
-  /* Footer */
+  
   footer {
     text-align: center;
     padding: 1.5rem;
@@ -133,7 +132,7 @@
     color: #555;
   }
   
-  /* Modals */
+ 
   .modal {
     display: none;
     position: fixed;
@@ -190,3 +189,256 @@
     cursor: pointer;
   }
   
+  */
+
+
+  /* General Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7fc;
+  color: #222;
+  transition: background-color 0.3s ease;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  animation: fadeInDown 0.6s ease;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #4a90e2;
+  transition: color 0.3s;
+}
+.logo:hover {
+  color: #0077cc;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #0077cc;
+}
+
+.auth-buttons button {
+  margin-left: 0.75rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.auth-buttons button:hover {
+  background-color: #357ab8;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to right, #6fb1fc, #4364f7);
+  color: white;
+  animation: fadeIn 1s ease;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: slideUp 1s ease;
+}
+
+.hero button {
+  padding: 0.75rem 2rem;
+  background: white;
+  color: #4364f7;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hero button:hover {
+  transform: scale(1.05);
+  background-color: #e0e9ff;
+}
+
+/* Features */
+.features {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: #f5faff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  transition: transform 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* How it Works */
+.how-it-works {
+  background: #eef4ff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.how-it-works ol {
+  margin-top: 1.5rem;
+  text-align: left;
+  max-width: 600px;
+  margin-inline: auto;
+  line-height: 1.6;
+}
+
+/* CTA */
+.signup-cta {
+  background: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.signup-cta button {
+  margin-top: 1rem;
+  background: white;
+  color: #4a90e2;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.signup-cta button:hover {
+  background-color: #d6e9ff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #f7f9fc;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Modals */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  animation: slideUp 0.5s ease;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.modal-content button:hover {
+  background: #357ab8;
+}
+
+.close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+.close:hover {
+  color: #333;
+}
+
+.auth-switch {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.auth-switch a {
+  color: #4a90e2;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
