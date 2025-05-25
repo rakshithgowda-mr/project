@@ -272,6 +272,17 @@ nav a:hover {
   animation: slideUp 1s ease;
 }
 
+/* .hero button {
+  padding: 0.75rem 2rem;
+  background: white;
+  color: #4364f7;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} */
+
 .hero button {
   padding: 0.75rem 2rem;
   background: white;
@@ -281,7 +292,9 @@ nav a:hover {
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 2rem; /* <- This moves it down */
 }
+
 .hero button:hover {
   transform: scale(1.05);
   background-color: #e0e9ff;
