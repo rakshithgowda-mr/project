@@ -5,12 +5,12 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
   }
-  
+
   body {
     background-color: #e6f0fa;
     color: #333;
   }
-  
+  /* General Layout */
   /* Header */
   header {
     display: flex;
