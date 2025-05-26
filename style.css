@@ -1,4 +1,4 @@
-
+/* General Layout */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
     color: #333;
   }
   
-  
+  /* Header */
   header {
     display: flex;
     justify-content: space-between;
@@ -48,7 +48,7 @@
     cursor: pointer;
   }
   
-  
+  /* Hero Section */
   .hero {
     text-align: center;
     padding: 4rem 2rem;
@@ -72,6 +72,7 @@
     margin-top: 1rem;
   }
   
+  /* Features */
   .features {
     padding: 3rem 2rem;
     background: #fff;
@@ -92,7 +93,7 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
   
- 
+  /* How it Works */
   .how-it-works {
     background: #f0f8ff;
     padding: 3rem 2rem;
@@ -106,7 +107,7 @@
     margin-inline: auto;
   }
   
-
+  /* CTA */
   .signup-cta {
     background: #0d6efd;
     color: white;
@@ -124,7 +125,7 @@
     font-weight: bold;
   }
   
-  
+  /* Footer */
   footer {
     text-align: center;
     padding: 1.5rem;
@@ -132,7 +133,7 @@
     color: #555;
   }
   
- 
+  /* Modals */
   .modal {
     display: none;
     position: fixed;
@@ -187,5 +188,41 @@
   .auth-switch a {
     color: #0d6efd;
     cursor: pointer;
-  }
+ 
+/* Container with border */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc; /* Border around the whole box */
+  border-radius: 8px;
+  padding: 5px 0px;
+ width: 237px;
+    height: 30px;
+  background-color: #fff;
+}
+
+/* Input styling - remove border */
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 8px;
+  background: transparent;
+}
+
+/* Button styling - no border, no background */
+.search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Optional: Adjust image size if needed */
+.search-bar img {
+  width: 20px;
+  height: 20px;
+}
+
   
