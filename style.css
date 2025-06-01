@@ -21,37 +21,6 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  .search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    padding: 0.25rem 0.5rem;
-    gap: 0.5rem;
-    max-width: 300px;
-    flex-grow: 1;
-    margin-left: 2rem; /* Optional: add spacing from left */
-  }
-  
-  .search-bar input {
-    border: none;
-    background: transparent;
-    padding: 0.5rem;
-    outline: none;
-    flex: 1;
-    font-size: 1rem;
-  }
-  
-  .search-bar button {
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    padding: 0.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -80,12 +49,18 @@
   }
   
   /* Hero Section */
-  .hero {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(to right, #0d6efd, #69a6ff);
-    color: white;
-  }
+  
+.hero {
+  background-image: url('img.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures image covers the section */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px; /* Adjust padding as needed */
+  color: white; /* Ensure text is visible on the image */
+  text-align: center;
+}
+
+
   
   .hero h1 {
     font-size: 2.5rem;
@@ -219,5 +194,42 @@
   .auth-switch a {
     color: #0d6efd;
     cursor: pointer;
-
+  }
+ 
+/* Container with border */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc; /* Border around the whole box */
+  border-radius: 8px;
+  padding: 5px 0px;
+ width: 237px;
+    height: 30px;
+  background-color: #fff;
 }
+
+/* Input styling - remove border */
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 8px;
+  background: transparent;
+}
+
+/* Button styling - no border, no background */
+.search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Optional: Adjust image size if needed */
+.search-bar img {
+  width: 20px;
+  height: 20px;
+}
+
+  
