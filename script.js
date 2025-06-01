@@ -53,3 +53,10 @@ function openRating() {
   // window.open("notifications.html", "_blank");
 }
 
+function openonline() {
+  // Open in the same tab:
+  window.location.href = "online.html";
+
+  // OR open in a new tab:
+  // window.open("not.html", "_blank");
+}
