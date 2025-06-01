@@ -45,3 +45,11 @@ function openNotifications() {
   // OR open in a new tab:
   // window.open("notifications.html", "_blank");
 }
+function openRating() {
+  // Open in the same tab:
+  window.location.href = "rating.html";
+
+  // OR open in a new tab:
+  // window.open("notifications.html", "_blank");
+}
+
