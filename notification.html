@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notifications</title>
+  <link rel="stylesheet" href="notification.css" />
+</head>
+<body>
+  <header>
+    <h1>Notifications</h1>
+    <p>Stay updated with session requests and reminders.</p>
+  </header>
+
+  <main>
+    <section class="notification-panel">
+      <div class="notification-controls">
+        <button onclick="markAllRead()">Mark All as Read</button>
+        <button onclick="clearNotifications()">Clear All</button>
+      </div>
+      <ul id="notification-list">
+        <!-- Sample notifications -->
+        <li class="notification unread">📅 New session request from Alex (Sunday 2 PM)</li>
+        <li class="notification unread">⏰ Reminder: Session with Sara in 1 hour</li>
+        <li class="notification">✅ Your session with John was completed</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="notification.js"></script>
+</body>
+</html>

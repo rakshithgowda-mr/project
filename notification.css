@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.notification-panel {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.notification-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.notification-controls button {
+  padding: 0.6rem 1rem;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notification-controls button:hover {
+  background-color: #3e8e41;
+}
+
+#notification-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notification {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.notification:last-child {
+  border-bottom: none;
+}
+
+.notification.unread {
+  font-weight: bold;
+  background-color: #e8f5e9;
+}
