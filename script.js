@@ -60,3 +60,10 @@ function openonline() {
   // OR open in a new tab:
   // window.open("not.html", "_blank");
 }
+function openskillmatching() {
+  // Open in the same tab:
+  window.location.href = "skillmatching.html";
+
+  // OR open in a new tab:
+  // window.open("not.html", "_blank");
+}

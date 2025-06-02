@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skill Matching</title>
+  <link rel="stylesheet" href="skillmatching.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Skill Matching</h1>
+    
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search by skill or availability..." />
+      <button onclick="filterResults()">Search</button>
+    </div>
+
+    <div id="results" class="card-container">
+      <!-- Cards will be populated by JavaScript -->
+    </div>
+  </div>
+
+  <script src="skillmatching.js"></script>
+</body>
+</html>
