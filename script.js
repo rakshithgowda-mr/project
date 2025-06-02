@@ -67,3 +67,10 @@ function openskillmatching() {
   // OR open in a new tab:
   // window.open("not.html", "_blank");
 }
+function openchat() {
+  // Open in the same tab:
+  window.location.href = "chat.html";
+
+  // OR open in a new tab:
+  // window.open("not.html", "_blank");
+}
